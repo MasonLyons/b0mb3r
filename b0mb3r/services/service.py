@@ -15,7 +15,7 @@ class Service(ABC):
         "User-Agent": user_agent_rotator.get_random_user_agent(),
         "X-Requested-With": "XMLHttpRequest",
     }
-    country_codes = {"7": "ru", "375": "by", "380": "ua"}
+    country_codes = {"7": "ru", "375": "by", "380": "ua", "44": "uk"}
     phone_codes = []
     client = httpx.AsyncClient(headers=headers, verify=False)
 
